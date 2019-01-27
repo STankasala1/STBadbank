@@ -2,7 +2,7 @@ FROM node:alpine
 
 MAINTAINER abelsan <abel@mit.edu>
 
-WORKDIR /app
+WORKDIR /root/badbank-master
 
 # copy code, install npm dependencies
 COPY index.js /badbank-master/index.js
