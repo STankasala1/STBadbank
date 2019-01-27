@@ -7,6 +7,7 @@ WORKDIR /app
 # copy code, install npm dependencies
 COPY index.js /app/index.js
 COPY package.json /app/package.json
+RUN npm install express
 RUN npm install
 
 # expose the port of your server
