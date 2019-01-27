@@ -5,7 +5,7 @@ MAINTAINER abelsan <abel@mit.edu>
 WORKDIR /app
 
 # copy code, install npm dependencies
-COPY server.js /app/server.js
+COPY index.js /app/index.js
 COPY package.json /app/package.json
 RUN npm install
 
