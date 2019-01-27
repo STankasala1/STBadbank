@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1beta1
+kind: Config
+build:
+  artifacts:
+  - image: gcr.io/classdemos-1537454011081/cabinfever
+deploy:
+  kubectl:
+    manifests:
+    - pod.yaml
