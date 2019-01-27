@@ -2,11 +2,11 @@ FROM node:alpine
 
 MAINTAINER abelsan <abel@mit.edu>
 
-WORKDIR /root/badbank-master
+WORKDIR /app
 
 # copy code, install npm dependencies
-COPY index.js /badbank-master/index.js
-COPY package.json /badbank-master/package.json
+COPY index.js /app/index.js
+COPY package.json /app/package.json
 RUN npm install
 
 # expose the port of your server
