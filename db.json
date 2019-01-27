@@ -1,0 +1,55 @@
+{
+  "accounts": [
+    {
+      "username": "Admin",
+      "email": "admin@badbank",
+      "balance": "0",
+      "password": "bbank",
+      "transactions": []
+    },
+    {
+      "username": "Savita Tankasala",
+      "email": "st@bb.edu",
+      "balance": 77198.51,
+      "password": "stbbank",
+      "transactions": [
+        {
+          "Date": "1/27/2019  0:14",
+          "amount": 10000,
+          "Transtype": "Deposit",
+          "Balance": 10000
+        },
+        {
+          "Date": "1/27/2019  0:14",
+          "amount": 80000,
+          "Transtype": "Deposit",
+          "Balance": 90000
+        },
+        {
+          "Date": "1/27/2019  0:14",
+          "amount": 5000,
+          "Transtype": "Withdraw",
+          "Balance": 85000
+        },
+        {
+          "Date": "1/27/2019  0:14",
+          "amount": 0.5,
+          "Transtype": "Withdraw",
+          "Balance": 84999.5
+        },
+        {
+          "Date": "1/27/2019  0:15",
+          "amount": 6900.99,
+          "Transtype": "Withdraw",
+          "Balance": 78098.51
+        },
+        {
+          "Date": "1/27/2019  0:25",
+          "amount": 900,
+          "Transtype": "Withdraw",
+          "Balance": 77198.51
+        }
+      ]
+    }
+  ]
+}
