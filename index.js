@@ -105,7 +105,7 @@ app.get('/accounts/login/:email/:password', function (req, res) {
 });
 app.get('/',function(req,res){
       res.send('success');
-}
+});
 
 app.get('/accounts/get/:email', function (req, res) {
 
