@@ -2,11 +2,11 @@ FROM node:alpine
 
 MAINTAINER abelsan <abel@mit.edu>
 
-WORKDIR /app
+WORKDIR /badbank-master
 
 # copy code, install npm dependencies
-COPY index.js /app/index.js
-COPY package.json /app/package.json
+COPY index.js /badbank-master/index.js
+COPY package.json /badbank-master/package.json
 RUN npm install
 RUN npm install express
 RUN npm install cors
