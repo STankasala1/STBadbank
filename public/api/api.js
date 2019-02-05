@@ -229,7 +229,7 @@ function allData() {
     //  YOUR CODE
     //  Get all data
     // -------------------------------------
-      var url = 'accounts/all/';
+      var url = 'http://kalamkamaraj.com:3000/accounts/all/';
     var msg1 = document.getElementById('messages');
     var alldatablock = document.getElementById('alldatacard');
     superagent
