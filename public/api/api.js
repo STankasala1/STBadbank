@@ -10,7 +10,7 @@ function create() {
     var password = document.getElementById('password').value;
     var header = document.getElementById('bbheader');
     var msg1 = document.getElementById('messages');
-    var url = '/accounts/create/' + username + '/' + email + '/' + password;
+    var url = 'http://kalamkamaraj.com:3000//accounts/create/' + username + '/' + email + '/' + password;
 
     superagent
         .get(url)
@@ -56,7 +56,7 @@ function login() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var header = document.getElementById('bbheader');
-    var url = '/accounts/login/' + email + '/' + password;
+    var url = 'http://kalamkamaraj.com:3000/accounts/login/' + email + '/' + password;
     var msg1 = document.getElementById('messages');
 
 
@@ -114,7 +114,7 @@ function deposit() {
     var email = acct.email;
     var amt = document.getElementById('amount').value;
     var msg1 = document.getElementById('messages');
-    var url = 'accounts/deposit/' + email + '/' + amt;
+    var url = 'http://kalamkamaraj.com:3000/accounts/deposit/' + email + '/' + amt;
     console.log(amt);
     superagent
         .get(url)
@@ -141,7 +141,7 @@ function withdraw() {
     var email = acct.email;
     var amt = document.getElementById('withamount').value;
     var msg1 = document.getElementById('messages');
-    var url = 'accounts/withdraw/' + email + '/' + amt;
+    var url = 'http://kalamkamaraj.com:3000/accounts/withdraw/' + email + '/' + amt;
     console.log(amt);
     superagent
         .get(url)
@@ -173,7 +173,7 @@ function transactions() {
     //  Get all user transactions
     // -------------------------------------
     var email = acct.email;
-    var url = 'accounts/transactions/' + email;
+    var url = 'http://kalamkamaraj.com:3000/accounts/transactions/' + email;
     var msg1 = document.getElementById('messages');
     var thistory = document.getElementById('Transhistory');
 
