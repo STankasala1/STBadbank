@@ -10,7 +10,7 @@ function create() {
     var password = document.getElementById('password').value;
     var header = document.getElementById('bbheader');
     var msg1 = document.getElementById('messages');
-    var url = 'http://kalamkamaraj.com:3000//accounts/create/' + username + '/' + email + '/' + password;
+    var url = 'http://kalamkamaraj.com:3000/accounts/create/' + username + '/' + email + '/' + password;
 
     superagent
         .get(url)
@@ -76,15 +76,7 @@ function login() {
                 console.log(res);
                custommsg.innerHTML = "You have logged in successfully" ;
                
-                url = 'accounts/get/' + email;
-                superagent
-                    .get(url)
-                    .end(function(err,res){
-                    if(err){
-                        loginAccount.innerHTML = JSON.stringify(res.body);
-                    }
-                    
-                    else {
+               
                              acct = JSON.parse(JSON.stringify(res.body));
                             var balance = acct.balance;
                             balanceacct = balance;
@@ -93,10 +85,6 @@ function login() {
                             loggedin = true;
 
                         enablenavigation('Logintab');
-                        
-                        
-                }}
-                )
                
 
               
